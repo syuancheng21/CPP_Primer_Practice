@@ -25,5 +25,8 @@ int main() {
   Animal *a1 = new Cat();
   a1->speak(); // 输出 "Animal speak" ✅
 
+  Animal *a2 = new Animal();
+  a2->speak();
+
   return 0;
 }

@@ -15,10 +15,14 @@ public:
 };
 
 int main() {
-  //看指针类型
+  // 看指针类型
+
   Animal *a = new Dog(); // Animal breathe
   a->breathe();
 
+  Animal *a2 = new Animal();
+  a2->breathe(); // Animal breathe
+
   Dog *d = new Dog();
-  d->breathe();//Dog breathe
+  d->breathe(); // Dog breathe
 }

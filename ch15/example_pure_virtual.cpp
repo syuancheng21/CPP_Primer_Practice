@@ -13,8 +13,11 @@ public:
 };
 
 int main() {
-  //   Animal a;  //❌ 抽象类不能实例化
+  
   Animal *a = new Dog(); // ✅ 指针可以
   a->speak();
+
+//   Animal *a2 = new Animal();//❌ 抽象类不能实例化
+  
   return 0;
 }
